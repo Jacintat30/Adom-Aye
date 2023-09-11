@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+  <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Project</title>
+<style>
+    body {
+  font-family: sans-serif;
+}
+h1 {
+  font-size: 26px;
+  font-weight: 80px;
+  line-height: 30px;
+  margin-bottom: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+li::first-letter {
+  text-transform: capitalize;
+}
+.kingdom-come {
+  max-width: 550px;
+  margin: 25px auto;
+}
+.take-over {
+  padding: 25px;
+}
+.overview {
+  margin: 24px;
+}
+.weather-temperature {
+  margin-right: 12px;
+}
+</style>
+
+
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+   integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <title>Weather Prodect Revised</title>
+</head>
+<body>
+  <div class="container">
+    <div class="kingdom-come">
+      <div classs="take-over">
+        <div class="overview">
+          <form id="search-form" class="mb-3">
+            <div class="row">
+              <input
+               type="search"
+               placeholder="Type a city.."
+               class="form-contrrol"
+               id="city-input"
+               autocomplete="off"
+               />
+            </div>
+            <div class="col-3">
+              <input
+              type="submit"
+              vaue="search"
+              class="btn btn-primary w-100"
+              />
+            </div>
+            </div>
+          </form>
+
+          <h1 id="city"></h1>
+          <ul>
+            <li>Houston <span id="Thursday"></span></li>
+            <li id="description"></li>
+          </ul>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <div class="d-flex weather-temperature">
+                <img src="<div class="d-flex weather-temperature">
+                    <img src="<div class="d-flex weather-temperature">
+                        <img src="https://openweathermap.org/img/wn/01d.png@2x.png"
+                        alt="Clear" id="icon" />
+                        <div>
+                    <strong id="temperature"></strong
+                    ><span class="units"> °F</span>
+          </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <ul>
+                 <li> Humidity: <span id="humidity"></span>%</li>
+                 <li>
+                   Wind: mph
+                   </li>
+                  </ul>
+              </div>
+        </div>
+      </div>
+</body>
+</html>
